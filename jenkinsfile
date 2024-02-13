@@ -28,8 +28,8 @@ pipeline {
             steps {
                 script{
                     docker.withRegistry('', 'DockerHubCred') {
-                    sh 'docker tag calculator ShatakshiTiwari/calculator:latest'
-                    sh 'docker push ShatakshiTiwari/calculator'
+                    sh 'docker tag calculator shatakshitiwari/calculator:latest'
+                    sh 'docker push shatakshitiwari/calculator'
                     }
                  }
             }
